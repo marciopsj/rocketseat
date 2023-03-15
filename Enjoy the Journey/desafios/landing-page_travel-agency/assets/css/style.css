@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter&display=swap');
+
+:root {
+    --primary-color: #151718;
+    --secondary-color: #DB2777;
+    --text-color: rgba(44, 46, 47, 0.9);
+    --link-button: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+main {
+    font-family: 'Cinzel';
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/bg-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {    
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 200px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.container__header {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.4rem;    
+    margin-bottom: 4px;
+}
+
+.container__header > span {
+    color: var(--secondary-color);
+}
+
+.container__text {
+    font-family: 'Inter';
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 72px;
+}
+
+.container__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.container__link {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 16px 32px;
+}
+
+.container__link--button {
+    background-color: var(--secondary-color);
+    color: var(--link-button);
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    transition: 0.8s ease;
+}
+
+.container__link--button:hover {    
+    transform: scale(1.05);
+}
+
+
+
+
